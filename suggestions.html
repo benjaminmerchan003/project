@@ -13,7 +13,7 @@
         <ul>
           <li><a href="index.html" title="Overview">Overview of Phở(Page 1)</a></li>
           <li><a href="history.html" title="History of pho">History of Phở(Page 2)</a></li>
-          <li><a href="suggestions.html" title="My Favorite spot">My Favorite Spot(Page 3) </a></li>
+          <li><a href ="favoritespot.html" title="My Favorite spot">My Favorite Spot(Page 3) </a></li>
           
         </ul>
       </nav>
@@ -22,13 +22,60 @@
       <article role="article">
         <header>
           <p>
-            As a huge enjoyer of phở(can't you tell?), I'd love to travel and try more phở spots! In the text box please feel free to write your go-to phở spot! 
+            As a huge enjoyer of phở, I'd love to travel and try more phở spots! In the text box please feel free to write your go-to phở spot! (no gatekeeping!)
             
           </p>
         </header>
         <section>
          
-          <!------ https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_textarea -->
+              <!-- MDN element: <textarea> https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/textarea
+ 
+            What it does: <textarea> is used to create a text box for users to input text on multiple lines. Must be paired with attributes to use it to its full potential.
+ 
+            Where it is used: It is used in suggestions.html to create a text box to input suggestions for pho spots and orders.
+ 
+            How I'm using it: I am using it to create a text box for suggestions. Unfortunately, I picked this element without knowing that I'd have to have a server script like .php to process and store the submissions. I nonetheless implemented the text box and am using it like I would if I had a proper server setup. I do hope I can implement it as is without any deductions.
+ 
+            3/6
+          -->
+ 
+          <!-- MDN attribute: placeholder https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/placeholder
+ 
+            What it does: The placeholder attribute is used to provide context to the user of what they should enter... "Enter name here," for example.
+ 
+            Where it is used: It is used in suggestions.html, in the name input box and the text box for suggestions.
+ 
+            How I'm using it: I am using it to reinforce what the page is asking for. I didn't want full black text in the text boxes, so I used placeholder to have a polished look as well as provide context.
+ 
+            4/6
+          -->
+ 
+          <!-- MDN attribute: size https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/size
+ 
+            What it does: The size attribute is used to set the width of the input text box.
+ 
+            Where it is used: It is used in suggestions.html, in the name input box.
+ 
+            How I'm using it: I am using it to set the size/width of the name input box... I picked this attribute before I realized it can't be used in conjunction with <textarea>, so I created the input name box to use it.
+ 
+            5/6
+          -->
+ 
+          <!-- MDN attribute: maxlength https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/maxlength
+ 
+            What it does: The maxlength attribute is used to set a limit on the amount of characters a user can input in a text box.
+ 
+            Where it is used: It is used in suggestions.html to serve the textarea box.
+ 
+            How I'm using it: I am using it to set a limit of 100 characters for the suggestion box. If I had a server script, I would have done the same to prevent spam.
+ 
+            6/6
+          -->
+ 
+          <!-- <input> was learned from https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input
+            This is not a signed up element, so I will not be fully commenting it.
+          -->
+
 
           <br>
 
@@ -36,21 +83,45 @@
 
           <div class ="center">
 
-          <p><label for = "phobox"> Please drop your go-spot <em>here</em>!</label></p>
-          <textarea id ="phobox" name="phobox" rows="7" cols="100"
-            placeholder="For example; Pho 75 off CIT St, try the Phở Bò viên!"></textarea>
 
+            <p><label for ="suggester"> Who is suggesting? </label></p>
+            <input type ="text" id="suggester" name="suggester" size= "21"
+            placeholder="Please enter your name here!"></input>
+
+
+
+
+          <p><label for = "phobox"> </label></p>
+          <textarea id ="phobox" name="phobox" rows="10" cols="100" maxlength="100"
+            placeholder="For example: Pho 75 off CIT St, try the Phở Bò viên!"></textarea>
+            <p>Please drop your go-spot <em>here!</em></p>
           <br>
-          <button type="submit">Submit </button>
+      
 
+          <button type="submit">Submit </button>
+              <p>Thank you for your suggestion! *.php functionality is not attached</p>
         
           </div>
         </form>
         
-      
+       
         </section>
       
       </article>
     </main>   
+
+      
+      <footer style="text-align: left;">
+
+      <a href="index.html" class="flowRight">Overview of Phở &rarr;</a>
+      <a href="favoritespot.html">&larr; My Favorite Spot</a>
+
+    
+    
+      </footer>
+
+
+
+
   </body>
 </html>

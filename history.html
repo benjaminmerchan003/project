@@ -12,8 +12,8 @@
       <nav role="navigation">
         <ul>
           <li><a href="index.html" title="Overview">Overview of phở(Page 1)</a></li>
-          <li><a href="Favoritespot.html" title="Structuring pages">My Favorite Phở Spot(Page 3)</a></li>
-          <li><a href="suggestions.html" title="Creating links">Suggestion Box(Page 4)</a></li>
+          <li><a href="Favoritespot.html" title="Favorite Spot">My Favorite Phở Spot(Page 3)</a></li>
+          <li><a href="suggestions.html" title="Suggestions">Suggestion Box(Page 4)</a></li>
         </ul>
       </nav>
     </header>
@@ -31,35 +31,46 @@
             <source srcset = "images/vietnam-map.webp" type = "image/webp"> 
             <img src = "images/vietnam-map.jpg" alt = "map of vietnam" width="300" height="300"  class = "flowRight">
           </picture>
-
+ 
+          <!-- MDN element: <picture> https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/picture
+ 
+            What it does: <picture> allows a user to set multiple sources for an image, letting the browser choose which one is best to use for any case. The browser defaults to source srcset and switches to img src if the device/browser can't use srcset.
+ 
+            Where it is used: It is used in history.html, in the origins and impact sections, as well as the favoritespot.html page in the storefront and my order sections.
+ 
+            How I'm using it: I am using it to provide a "backup" image in case the browser cannot display one image (the webp image). Additionally, it is also carrying the backup image for my map of the storefront of Thien Huong.
+ 
+            1/6
+          -->
+ 
           <p>
            Phở started to appear in northern Vietnam around the early 1900s (1900-1907), with most people tracing it back to Nam Định and Hanoi. During this time, Vietnam was a colonial subject of the French empire, and a part of the French Indochinese Union, which shaped the diets of the local population and how phở came to be. Before the arrival of the French, 
            Vietnamese people would not consume cattle, but rather use cattle as farming equipment, such as a plow. As the French started to flood into Vietnam, so did a <em>big</em> demand for beef. As the French imported and ate beef, the leftovers, bones and cheap cuts would end up with local chefs, who simmered them for hours into the broth that phở is known for today.
           </p>
-
+ 
           <p>
-            Early in its existence, phở was a street food. Vendors would carry everything that was needed to prepare a bowl of phở on the spot. At first vendors would only sell beef phở (phở tái), with chicken phở only becoming common around 1939, when beef sales were restricted on certain days and vendors switched to chicken instead.
+            Early in its existence, phở was a street food. Vendors would carry everything that was needed to prepare a bowl of phở on the spot. At first, vendors would only sell beef phở (phở tái), with chicken phở only becoming common around 1939, when beef sales were restricted on certain days and vendors switched to chicken instead.
           </p>
         </section>
         <section>
           <h2>The Impact of the Vietnam War</h2>
           <hr>
           <p>
-           In 1954, Vietnam was split into two parts, Communist North and Capitalist South after the First Indochina War. Around a million Vietnamese moved to the South, taking phở recipes with them. Once phở reached Saigon, the southern capital of the new Republic of Vietnam, the dish began to change. The South had more fresh produce, so cooks began serving it with a plate of herbs and bean sprouts on the side, with the broth becoming a little sweeter to match Southern tastes.
-          Meanwhile in the North, food became scarce, forcing the population to cook with whatever they had on hand, at one point they began cooking phở with no meat. This dish, nicknamed phở không người lái, or "pilotless phở," gave the Northern
+           In 1954, Vietnam was split into two parts, Communist North and Capitalist South, after the First Indochina War. Around a million Vietnamese moved to the South, taking phở recipes with them. Once phở reached Saigon, the southern capital of the new Republic of Vietnam, the dish began to change. The South had more fresh produce, so cooks began serving it with a plate of herbs and bean sprouts on the side, with the broth becoming a little sweeter to match Southern tastes.
+          Meanwhile, in the North, food became scarce, forcing the population to cook with whatever they had on hand; at one point, they began cooking phở with no meat. This dish, nicknamed phở không người lái, or "pilotless phở," gave the Northern
           style its distinctive focus on broth quality, keeping the overall dish simple with little to no extra side ingredients.  
           </p>
-
+ 
           <picture>
             <source srcset = "images/Flag_map_of_North_&_South_Vietnam.webp" type = "image/webp"> 
             <img src = "images/Flag_map_of_North_&_South_Vietnam.jpg" alt = "North and south vietnam" width="300" height="250"  class = "flowRight">
           </picture>
-
+ 
           <p>
             As the Communist Northern forces captured Saigon in 1975, hundreds of thousands of Southern Vietnamese fled their home country, with many resettling in the United States. Since most of them came from the South, the Southern style phở is what they brought. 
             Families opened small phở restaurants to serve their own communities, with people outside the Vietnamese community discovering Vietnamese cuisine over the next few decades.
           </p>
-
+ 
           <p>
             If you've ever gone to a Vietnamese restaurant, you've probably noticed that a lot of restaurants have a number in their name, like Phở 54, Phở 75, or Phở 79. Those numbers aren't random and carry significant meaning. For many owners, the number represents a year that has meaning to them. 54 often refers to 1954, when families moved from the North to the South, and 75 refers to 1975, the year Saigon fell and many Vietnamese fled the country. Other restaurants use the year the owners left Vietnam or arrived in the U.S.
           </p>
@@ -73,9 +84,22 @@
           </p>
           <br>
         </section>
-
+ 
        
       </article>
     </main>
+ 
+    <footer style="text-align: left;">
+ 
+      <a href="Favoritespot.html" class="flowRight">My Favorite Spot &rarr;</a>
+      <a href="index.html">&larr; Overview of Phở</a>
+ 
+    
+    
+   </footer>
+ 
+ 
+ 
   </body>
 </html>
+ 
